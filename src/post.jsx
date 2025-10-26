@@ -1,17 +1,17 @@
 import { posts } from "./data/posts";
 import './App.css';
-import PostItem from "./components/postItem";
-import Header from "./components/header";
+import PostItem from "./components/potItem/postItem";
+import Header from "./components/header/header";
 
 export default function Post() {
 
-    return(      
-        
+    return (
+
         <>
-        <Header />
-        {posts.map((elem) =>(
-        <PostItem post={elem}/>
-        ))}
+            <Header />
+            {posts.map((elem) => (
+                <PostItem ley ={elem.id} post={elem} />
+            ))}
 
         </>
 
