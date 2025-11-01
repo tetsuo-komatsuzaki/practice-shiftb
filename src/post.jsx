@@ -5,17 +5,17 @@ import Header from "./components/header/header";
 
 export default function Post() {
 
-    return (
+  return (
 
-        <>
-            <Header />
-            {posts.map((elem) => (
-                <PostItem ley ={elem.id} post={elem} />
-            ))}
+    <>
+      <Header />
+      {posts.map((elem) => (
+        <PostItem ley={elem.id} post={elem} />
+      ))}
 
-        </>
+    </>
 
-    );
+  );
 }
 
 
