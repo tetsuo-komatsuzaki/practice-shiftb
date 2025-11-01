@@ -2,13 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 import { posts } from './data/posts';
 import Post from './post';
+import Inquiry from './components/inquiry/inquiry';
+import { Route, Routes } from 'react-router-dom';
+import Detail from './components/detail/detail';
 
 function App() {
   return (
     <div>
-        <p>
-          <Post/>
-        </p>
+      <Routes>
+         <Route path="/" element={<Post />} />
+        <Route path="/inquiry" element={<Inquiry />} />
+        <Route path="/post/:id" element={<Detail/>}/>
+      </Routes>
+
     </div>
   );
 }

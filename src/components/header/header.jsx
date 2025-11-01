@@ -1,11 +1,13 @@
 import classes from "./header.module.css"
+import {Link} from "react-router-dom"
+
 
 export default function Header() {
   return (
     <>
       <header className={classes.header}>
-        <a href="#" className={classes.article}>Blog</a>
-        <a href="#" className={classes.article}>お問い合わせ</a>
+        <Link to="/" className={classes.article}>Blog</Link>
+        <Link to="/inquiry" className={classes.article}>お問い合わせ</Link>
       </header>
     </>
   )
