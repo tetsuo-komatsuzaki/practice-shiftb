@@ -10,7 +10,7 @@ export default function Post() {
     <>
       <Header />
       {posts.map((elem) => (
-        <PostItem ley={elem.id} post={elem} />
+        <PostItem key={elem.id} post={elem} />
       ))}
 
     </>
