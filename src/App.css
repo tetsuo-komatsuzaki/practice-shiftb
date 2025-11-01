@@ -1,3 +1,11 @@
+html,
+body,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -32,42 +40,17 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.article {
-  border: solid ;
-  border-color: #3e3f3f41;
-  border-width: 1px;
-  margin:20px;
-  padding:10px;
-}
-
-.meta {
-  display: flex;
-  justify-content: space-between; /* 左右に分ける */
-  align-items: center;
-  margin-bottom: 8px;
-  font-size: 0.9rem;
-  color: #555;
-}
-
 .categories {
-border: solid ;
-border-radius: 10%;
+  border: solid;
+  border-radius: 10%;
   border-color: #3d2cae86;
   border-width: 1px;
   color: #3d2cae86;
-  margin:5px;
+  margin: 5px;
 }
-
-.header {
-  background-color: black;
-  color: white;
-  height:80px;
-  text-align: center;
-  justify-content: space-between;
-  font: 100;
-} 
