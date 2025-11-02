@@ -10,7 +10,6 @@ export default function Detail() {
 
   return (
     <>
-      <Header />
       <div>
         <img src={postDetail.thumbnailUrl} alt="" className={classes.thumbnail}/>
       </div>
@@ -26,7 +25,7 @@ export default function Detail() {
           </span>
         </div>
         <h1>{`APIで取得した${postDetail.title}`}</h1>
-        <p dangerouslySetInnerHTML={{ __html:postDetail.content }}></p>
+        <div dangerouslySetInnerHTML={{ __html:postDetail.content }}></div>
       </div>
     </>
   )

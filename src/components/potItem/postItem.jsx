@@ -15,7 +15,7 @@ export default function PostItem({ post }) {
 
 
 
-      <Link to ={`/post/${post.id}`} className={classes.linkwap}>
+      <Link to ={`/posts/${post.id}`} className={classes.linkwap}>
       <div  className={classes.article}>
         <div className={classes.meta}>
           <span>{date.toLocaleDateString()}</span>

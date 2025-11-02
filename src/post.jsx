@@ -8,7 +8,6 @@ export default function Post() {
   return (
 
     <>
-      <Header />
       {posts.map((elem) => (
         <PostItem key={elem.id} post={elem} />
       ))}
