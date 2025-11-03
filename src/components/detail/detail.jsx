@@ -6,22 +6,22 @@ import { useState, useEffect } from "react";
 export default function Detail() {
   const { id } = useParams();
   const [postsDetail, setPostDetail] = useState(null);
-  const [loading,setLoading] = useState(false)
+  const [loading, setLoading] = useState(false)
 
 
   useEffect(() => {
-      const fetcher = async () => {
-        setLoading(true)
-        const res = await fetch(`${posts_URL}/posts/${id}`)
-        const {post} = await res.json()
-        setPostDetail(post)
-        setLoading(false)
-  };
-  fetcher()
+    const fetcher = async () => {
+      setLoading(true)
+      const res = await fetch(`${posts_URL}/posts/${id}`)
+      const { post } = await res.json()
+      setPostDetail(post)
+      setLoading(false)
+    };
+    fetcher()
   }, [id]);
-if(loading){
-  return <div>読み込み中...</div>
-}
+  if (loading) {
+    return <div>読み込み中...</div>
+  }
 
   if (!loading && !postsDetail) {
     return <div>記事が見つかりません</div>
