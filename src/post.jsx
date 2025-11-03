@@ -24,7 +24,7 @@ if(loading){
   return <div>読み込み中...</div>
 }
 
-if(!loading&&!posts){
+if(!loading&&posts.length === 0){
   return <div>記事が見つかりません</div>
 }
 
