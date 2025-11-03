@@ -15,21 +15,21 @@ export default function PostItem({ post }) {
 
 
 
-      <Link to ={`/posts/${post.id}`} className={classes.linkwap}>
-      <div  className={classes.article}>
-        <div className={classes.meta}>
-          <span>{date.toLocaleDateString()}</span>
-          <span>
-            {post.categories.map((text, index) => {
-              return (
-                <span className="categories" key={index}>{text}</span>
-              )
-            })}
-          </span>
+      <Link to={`/posts/${post.id}`} className={classes.linkwap}>
+        <div className={classes.article}>
+          <div className={classes.meta}>
+            <span>{date.toLocaleDateString()}</span>
+            <span>
+              {post.categories.map((text, index) => {
+                return (
+                  <span className="categories" key={index}>{text}</span>
+                )
+              })}
+            </span>
 
-        </div>
-        <h1>{post.title}</h1>
-        <p dangerouslySetInnerHTML={{ __html: contentReview }}></p>
+          </div>
+          <h1>{post.title}</h1>
+          <p dangerouslySetInnerHTML={{ __html: contentReview }}></p>
         </div>
       </Link>
     </>
