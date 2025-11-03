@@ -96,7 +96,7 @@ const handleClear = () =>{
 <div className={classes.div}>
 <label htmlFor="email" className={classes.label}>メールアドレス</label>
 <div className={classes.field}>
-<input type="text" id="email"  name="email" value={form.email} onChange={handleForm} className={classes.content}/>
+<input type="email" id="email"  name="email" value={form.email} onChange={handleForm} className={classes.content}/>
   <ErrorMessage className={classes.error} message={errors.email}/>
 </div>
 </div>
